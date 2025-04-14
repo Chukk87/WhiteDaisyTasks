@@ -1,0 +1,46 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "File Processor";
+}
+
+<h2>Convert Tab to XML</h2>
+<p> Converts a tab delimited file into a xml file; Copy and paste directory locations into the input boxes</p>
+<form method="post" asp-page-handler="ConvertTabs">
+    <div class="mb-2">
+        <label>Tab Input Path:</label>
+        <input asp-for="TabInputPath" class="form-control" value="C:\Input\data.txt" />
+    </div>
+    <div class="mb-2">
+        <label>Tab Output Path:</label>
+        <input asp-for="TabOutputPath" class="form-control" value="C:\Output\data.xml" />
+    </div>
+    <button type="submit">Convert Tabs</button>
+</form>
+
+<hr />
+
+<h2>Process Name File</h2>
+<p> Converts a list of names from a .txt file into file of names split and then converted to a CSV file; Copy and paste directory locations into the input boxes</p>
+<form method="post" asp-page-handler="ConvertNames">
+    <div class="mb-2">
+        <label>Name Input Path:</label>
+        <input asp-for="NameInputPath" class="form-control" value="C:\Input\names.txt" />
+    </div>
+    <div class="mb-2">
+        <label>Name Output Path:</label>
+        <input asp-for="NameOutputPath" class="form-control" value="C:\Output\names_output.csv" />
+    </div>
+    <button type="submit">Convert Names</button>
+</form>
+
+@if (!string.IsNullOrWhiteSpace(Model.StatusMessage))
+{
+    <div class="alert alert-info mt-3">
+        @Model.StatusMessage
+    </div>
+}
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

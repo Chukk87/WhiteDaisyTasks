@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35527.113 d17.12
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WhiteDaisyLibrary", "WhiteDaisyLibrary\WhiteDaisyLibrary.csproj", "{4423640B-0DDF-4A59-AE16-71EF61B9AD4B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WhiteDaisyTasksUi", "WhiteDaisyTasksUi\WhiteDaisyTasksUi.csproj", "{8F720661-31A3-460E-BE49-610ACB35DBFA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4423640B-0DDF-4A59-AE16-71EF61B9AD4B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4423640B-0DDF-4A59-AE16-71EF61B9AD4B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4423640B-0DDF-4A59-AE16-71EF61B9AD4B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4423640B-0DDF-4A59-AE16-71EF61B9AD4B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8F720661-31A3-460E-BE49-610ACB35DBFA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8F720661-31A3-460E-BE49-610ACB35DBFA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8F720661-31A3-460E-BE49-610ACB35DBFA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8F720661-31A3-460E-BE49-610ACB35DBFA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
